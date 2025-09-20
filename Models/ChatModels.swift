@@ -1,0 +1,21 @@
+//
+//  ChatModels.swift
+//  lifehackiosapp
+//
+//  Created by Aleksander Blindheim on 19/09/2025.
+//<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>com.apple.developer.healthkit</key><true/>
+  <key>com.apple.developer.healthkit.access</key>
+  <array>
+    <string>health-share</string>
+    <string>health-update</string>
+  </array>
+  <key>com.apple.security.application-groups</key>
+  <array>
+    <string>group.com.yourcompany.lifehack</string>
+  </array>
+</dict>
+</plist>
