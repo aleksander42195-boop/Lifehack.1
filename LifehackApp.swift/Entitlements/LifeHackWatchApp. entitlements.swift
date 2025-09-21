@@ -58,3 +58,32 @@ final class AppConfig: ObservableObject {
   </array>
 </dict>
 </plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- HealthKit -->
+  <key>com.apple.developer.healthkit</key>
+  <true/>
+  <key>com.apple.developer.healthkit.access</key>
+  <array>
+    <string>health-share</string>
+    <string>health-update</string>
+  </array>
+
+  <!-- App Groups (bytt til ditt eget) -->
+  <key>com.apple.security.application-groups</key>
+  <array>
+    <string>group.com.yourcompany.lifehack</string>
+  </array>
+</dict>
+</plist>
+git add Lifehack/Lifehack.entitlements
+git commit -m "Add fallback entitlements for Xcode Cloud path"
+git push
+git add ios-app/LifehackApp/Entitlements/LifehackWatchApp.entitlements
+git commit -m "Add watch entitlements"
+git push
+git add ios-app/LifehackApp/Entitlements/LifehackWatchApp.entitlements
+git commit -m "Add watch entitlements"
+git push

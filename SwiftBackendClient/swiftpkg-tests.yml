@@ -1,0 +1,31 @@
+#
+//  swiftpkg-tests.yml
+//  lifehackiosapp
+//
+//  Created by Aleksander Blindheim on 21/09/2025.
+//name: Swift Package Tests
+
+on:
+  push:
+    branches: [ main, "**/**" ]
+    paths:
+      - "swift-backend-client/**"
+      - ".github/workflows/swiftpkg-tests.yml"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "swift-backend-client/**"
+      - ".github/workflows/swiftpkg-tests.yml"
+
+jobs:
+  spm-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Swift version
+        run: swift --version
+      - name: Test SPM package
+        run: |
+          cd swift-backend-client
+          swift test --parallel
+
