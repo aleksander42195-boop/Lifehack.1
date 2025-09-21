@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE9EEF182E7CACA500636BA9 /* onAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EEF172E7CAC9A00636BA9 /* onAppear.swift */; };
+		FEEA900F2E7FC24C0014F197 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = FEEA900E2E7FC24C0014F197 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,6 +20,13 @@
 			remoteInfo = Lifehack;
 		};
 		FE9EEEAE2E7C83C800636BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE9EEE8A2E7C83C700636BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE9EEE912E7C83C700636BA9;
+			remoteInfo = Lifehack;
+		};
+		FEEA8FFB2E7FBE470014F197 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE9EEE8A2E7C83C700636BA9 /* Project object */;
 			proxyType = 1;
@@ -59,6 +67,8 @@
 		FEEA8FE72E7F10DF0014F197 /* initializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initializing.swift; sourceTree = "<group>"; };
 		FEEA8FE82E7F11390014F197 /* Https.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Https.swift; sourceTree = "<group>"; };
 		FEEA8FE92E7F27210014F197 /* commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commit.swift; sourceTree = "<group>"; };
+		FEEA8FF72E7FBE470014F197 /* LifehackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifehackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEA90102E7FC2CF0014F197 /* swiftpkg-tests.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "swiftpkg-tests.yml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -80,9 +90,9 @@
 				Views/NutritionView.swift,
 				Views/RootTabView.swift,
 				Views/SettingsView.swift,
+				WatchApp/codesnippet.swift,
 				WatchApp/info.plist,
 				WatchApp/LifeHackWatchApp.swift,
-				WatchApp/Services/Connectivity_Watch.swift,
 				WatchApp/Services/HealthKitManager.swift,
 				WatchApp/Services/WorkoutManager.swift,
 				WatchApp/WatchApp/LiveWorkoutView.swift,
@@ -116,6 +126,26 @@
 			path = LifehackApp.swift;
 			sourceTree = "<group>";
 		};
+		FEEA8FEB2E7F3AA70014F197 /* workspace */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = workspace;
+			sourceTree = "<group>";
+		};
+		FEEA8FF82E7FBE470014F197 /* LifehackAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LifehackAppTests;
+			sourceTree = "<group>";
+		};
+		FEEA90032E7FBFB30014F197 /* ios-test.yml */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ios-test.yml";
+			sourceTree = "<group>";
+		};
+		FEFBAC3B2E7FE053004C66FF /* Swift */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Swift;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEA900F2E7FC24C0014F197 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,12 +171,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEEA8FF42E7FBE470014F197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FE75F4612E7DD775009AB099 /* SwiftBackendClient */ = {
 			isa = PBXGroup;
 			children = (
+				FEEA90102E7FC2CF0014F197 /* swiftpkg-tests.yml */,
 				FE75F4642E7DD7D9009AB099 /* Sources */,
 				FE75F4622E7DD7A0009AB099 /* package.swift */,
 			);
@@ -184,6 +223,10 @@
 		FE9EEE892E7C83C700636BA9 = {
 			isa = PBXGroup;
 			children = (
+				FEFBAC3B2E7FE053004C66FF /* Swift */,
+				FEEA90092E7FC0620014F197 /* .github */,
+				FEEA8FF22E7F46640014F197 /* cd */,
+				FEEA8FEA2E7F3A8E0014F197 /* Volumes */,
 				FEEA8FE42E7F10290014F197 /* GitHubExport */,
 				FE75F46F2E7DEFED009AB099 /* View */,
 				FE75F4612E7DD775009AB099 /* SwiftBackendClient */,
@@ -196,6 +239,7 @@
 				FE9EEECC2E7C89B300636BA9 /* LifehackApp.swift */,
 				FE9EEEA62E7C83C800636BA9 /* LifehackTests */,
 				FE9EEEB02E7C83C800636BA9 /* LifehackUITests */,
+				FEEA8FF82E7FBE470014F197 /* LifehackAppTests */,
 				FE9EEE932E7C83C700636BA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +250,7 @@
 				FE9EEE922E7C83C700636BA9 /* Lifehack.app */,
 				FE9EEEA32E7C83C800636BA9 /* LifehackTests.xctest */,
 				FE9EEEAD2E7C83C800636BA9 /* LifehackUITests.xctest */,
+				FEEA8FF72E7FBE470014F197 /* LifehackAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +325,37 @@
 			path = GitHubExport;
 			sourceTree = "<group>";
 		};
+		FEEA8FEA2E7F3A8E0014F197 /* Volumes */ = {
+			isa = PBXGroup;
+			children = (
+				FEEA8FEB2E7F3AA70014F197 /* workspace */,
+			);
+			path = Volumes;
+			sourceTree = "<group>";
+		};
+		FEEA8FF22E7F46640014F197 /* cd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cd;
+			sourceTree = "<group>";
+		};
+		FEEA90082E7FC0510014F197 /* wokflows */ = {
+			isa = PBXGroup;
+			children = (
+				FEEA90032E7FBFB30014F197 /* ios-test.yml */,
+			);
+			path = wokflows;
+			sourceTree = "<group>";
+		};
+		FEEA90092E7FC0620014F197 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				FEEA90082E7FC0510014F197 /* wokflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +373,7 @@
 			);
 			name = Lifehack;
 			packageProductDependencies = (
+				FEEA900E2E7FC24C0014F197 /* Algorithms */,
 			);
 			productName = Lifehack;
 			productReference = FE9EEE922E7C83C700636BA9 /* Lifehack.app */;
@@ -318,6 +395,8 @@
 			fileSystemSynchronizedGroups = (
 				FE9EEEA62E7C83C800636BA9 /* LifehackTests */,
 				FE9EEECC2E7C89B300636BA9 /* LifehackApp.swift */,
+				FEEA90032E7FBFB30014F197 /* ios-test.yml */,
+				FEFBAC3B2E7FE053004C66FF /* Swift */,
 			);
 			name = LifehackTests;
 			packageProductDependencies = (
@@ -349,6 +428,29 @@
 			productReference = FE9EEEAD2E7C83C800636BA9 /* LifehackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FEEA8FF62E7FBE470014F197 /* LifehackAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEA8FFD2E7FBE470014F197 /* Build configuration list for PBXNativeTarget "LifehackAppTests" */;
+			buildPhases = (
+				FEEA8FF32E7FBE470014F197 /* Sources */,
+				FEEA8FF42E7FBE470014F197 /* Frameworks */,
+				FEEA8FF52E7FBE470014F197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEA8FFC2E7FBE470014F197 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FEEA8FF82E7FBE470014F197 /* LifehackAppTests */,
+			);
+			name = LifehackAppTests;
+			packageProductDependencies = (
+			);
+			productName = LifehackAppTests;
+			productReference = FEEA8FF72E7FBE470014F197 /* LifehackAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,6 +472,10 @@
 						CreatedOnToolsVersion = 26.0;
 						TestTargetID = FE9EEE912E7C83C700636BA9;
 					};
+					FEEA8FF62E7FBE470014F197 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = FE9EEE912E7C83C700636BA9;
+					};
 				};
 			};
 			buildConfigurationList = FE9EEE8D2E7C83C700636BA9 /* Build configuration list for PBXProject "lifehackiosapp" */;
@@ -381,6 +487,9 @@
 			);
 			mainGroup = FE9EEE892E7C83C700636BA9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FEEA900D2E7FC24C0014F197 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE9EEE932E7C83C700636BA9 /* Products */;
 			projectDirPath = "";
@@ -389,6 +498,7 @@
 				FE9EEE912E7C83C700636BA9 /* Lifehack */,
 				FE9EEEA22E7C83C800636BA9 /* LifehackTests */,
 				FE9EEEAC2E7C83C800636BA9 /* LifehackUITests */,
+				FEEA8FF62E7FBE470014F197 /* LifehackAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -409,6 +519,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FE9EEEAB2E7C83C800636BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEA8FF52E7FBE470014F197 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,6 +557,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEEA8FF32E7FBE470014F197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -452,6 +576,11 @@
 			isa = PBXTargetDependency;
 			target = FE9EEE912E7C83C700636BA9 /* Lifehack */;
 			targetProxy = FE9EEEAE2E7C83C800636BA9 /* PBXContainerItemProxy */;
+		};
+		FEEA8FFC2E7FBE470014F197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE9EEE912E7C83C700636BA9 /* Lifehack */;
+			targetProxy = FEEA8FFB2E7FBE470014F197 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -729,6 +858,48 @@
 			};
 			name = Release;
 		};
+		FEEA8FFE2E7FBE470014F197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTQ236WDL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lifehackinfinity.no.LifehackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifehack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lifehack";
+			};
+			name = Debug;
+		};
+		FEEA8FFF2E7FBE470014F197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTQ236WDL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lifehackinfinity.no.LifehackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifehack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lifehack";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -768,7 +939,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		FEEA8FFD2E7FBE470014F197 /* Build configuration list for PBXNativeTarget "LifehackAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEA8FFE2E7FBE470014F197 /* Debug */,
+				FEEA8FFF2E7FBE470014F197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEEA900D2E7FC24C0014F197 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEEA900E2E7FC24C0014F197 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEA900D2E7FC24C0014F197 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE9EEE8A2E7C83C700636BA9 /* Project object */;
 }
